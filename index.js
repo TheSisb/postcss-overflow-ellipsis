@@ -12,15 +12,11 @@ module.exports = postcss.plugin('postcss-overflow-ellipsis', () => {
                 value: 'nowrap'
             });
             decl.cloneBefore({
-                prop: 'overflow',
-                value: 'hidden'
-            });
-            decl.cloneBefore({
                 prop: 'text-overflow',
                 value: 'ellipsis'
             });
 
-            decl.remove();
+            decl.value = "hidden";
         });
     };
 });
