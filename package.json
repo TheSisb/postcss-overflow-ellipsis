@@ -1,6 +1,6 @@
 {
   "name": "postcss-overflow-ellipsis",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "PostCSS plugin to convert shorthand 'overflow: ellipsis' into the appropriate rules",
   "keywords": [
     "postcss",
