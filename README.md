@@ -15,8 +15,8 @@
 ```css
 .foo {
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 ```
 
