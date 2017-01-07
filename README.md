@@ -8,13 +8,15 @@
 
 ```css
 .foo {
-    /* Input example */
+    overflow: ellipsis;
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 ```
 
