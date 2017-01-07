@@ -5,7 +5,7 @@ module.exports = postcss.plugin('postcss-overflow-ellipsis', () => {
 
     return function (css) {
         css.walkDecls(propertyMatch, decl => {
-            if (decl.value !== "ellipsis") return;
+            if (decl.value !== 'ellipsis') return;
 
             decl.cloneBefore({
                 prop: 'white-space',
@@ -16,7 +16,7 @@ module.exports = postcss.plugin('postcss-overflow-ellipsis', () => {
                 value: 'ellipsis'
             });
 
-            decl.value = "hidden";
+            decl.value = 'hidden';
         });
     };
 });
