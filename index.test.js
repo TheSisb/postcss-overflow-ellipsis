@@ -14,7 +14,7 @@ function run(input, output, opts) {
 it('expands overflow:ellipsis', () => {
     return run(
     	'a {overflow: ellipsis;}',
-    	'a {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}',
+    	'a {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}',
     	{}
 	);
 });
